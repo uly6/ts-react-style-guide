@@ -20,7 +20,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+    "lint": "eslint src --color",
+    "lint:fix": "eslint src --fix --color",
+    "lint:check": "eslint --print-config .eslintrc | eslint-config-prettier-check"
   },
   "eslintConfig": {
     "extends": "react-app"
